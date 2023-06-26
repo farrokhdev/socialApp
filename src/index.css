@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #3b82f6;
+}
+
+input {
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+}
+input::placeholder {
+  text-transform: capitalize;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  /* background-color: rgb(240, 240, 240); */
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3,
+h4 {
+  font-weight: 500;
+}
+
+a {
+  /* color: var(--color-primary); */
+}
+
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 10px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+button:hover {
+}
+
+@layer base {
+  /* h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+
+  a {
+    @apply uppercase;
+  } */
+}
